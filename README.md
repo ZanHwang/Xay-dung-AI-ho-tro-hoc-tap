@@ -160,27 +160,7 @@ DATN/
 
 Mức nắm vững hiện tính từ tỷ lệ đúng của tối đa 20 câu đã nộp gần nhất cho mỗi chủ đề. Đây là kết quả luyện tập, chưa phải tiến độ hoàn thành chương trình học.
 
-## Đưa README lên Git
 
-Nếu dự án đã có repository và remote `origin`:
-
-```bash
-git status
-git add README.md
-git commit -m "docs: add JARVIS project README"
-git push
-```
-
-Nếu chưa có repository:
-
-```bash
-git init
-git add README.md
-git commit -m "docs: add JARVIS project README"
-git branch -M main
-git remote add origin <URL_REPOSITORY_CUA_BAN>
-git push -u origin main
-```
 
 Thay `<URL_REPOSITORY_CUA_BAN>` bằng URL repository bạn đã tạo. Các lệnh trên chỉ đưa README lên Git; để đưa toàn bộ dự án lên, chọn thêm các thư mục mã nguồn và file cấu hình cần commit. Kiểm tra danh sách file staged bằng `git diff --cached --name-only` trước khi commit. Giữ `.env.local`, `node_modules/`, dữ liệu runtime và file kiểm tra tạm ngoài repository.
 
